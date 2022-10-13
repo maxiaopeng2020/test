@@ -1,4 +1,4 @@
-# 基础镜像使用java:8  1111111111111111
+# 基础镜像使用java:  hot-fix
 FROM java:8
 VOLUME /springboot/temp/data
 # 将jar包添加到容器中并更名
