@@ -1,0 +1,10 @@
+# 基础镜像使用java
+FROM java:8
+VOLUME /springboot/temp/data
+# 将jar包添加到容器中并更名
+ADD account-0.0.1-SNAPSHOT.jar account.jar
+# 运行jar包
+RUN bash -c 'touch /account.jar'
+ENTRYPOINT ["java","-jar","/account.jar"]
+#暴露端口
+EXPOSE 8080
