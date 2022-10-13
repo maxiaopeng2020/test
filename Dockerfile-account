@@ -8,3 +8,4 @@ RUN bash -c 'touch /account.jar'
 ENTRYPOINT ["java","-jar","/account.jar"]
 #暴露端口
 EXPOSE 8080  hot-fix test
+github上修改
